@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.btn {
+  display: block;
+  max-width: 220px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+}
+.btn_rounded {
+  border-radius: 8px;
+  background-color: #e22d24;
+  color: #fff;
+}
+.btn_rounded:hover {
+  background-color: #2377d9;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.btn_register {
+  border-radius: 8px;
+  background-color: #e22d24;
+  color: #fff !important;
+  font-weight: 700;
+}
+.btn_register:hover {
+  background-color: #2377d9;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+}
+.btn_enter {
+  border-radius: 8px;
+  background-color: #63C132;
+  color: #fff !important;
+  font-weight: 700;
+}
+.btn_enter:hover {
+  background-color: #2377d9;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hash {
+  color: #2377d9;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #fff;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 80%;
+}
+.logo__img {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+.nav__link {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: #2377d9;
+}
+
+.wallpaper {
+  margin-top: 60px;
+  background-image: url(../media/Frame11.png);
+  height: 700px;
+}
+.wallpaper__container {
+  display: flex;
+  justify-content: flex-end;
+  height: 700px;
+  align-items: center;
+}
+
+.wallpaper-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+  gap: 20px;
+}
+.wallpaper-text__header {
+  font-size: 36px;
+  line-height: 48px;
+}
+.wallpaper-text__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+.info {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.info__row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.info__col {
+  flex-direction: column;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.info__img {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+}
+.info__header {
+  font-size: 36px;
+  line-height: 48px;
+}
+.info__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+.course {
+  gap: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.course__row {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: center;
+  width: 80%;
+}
+.course__col {
+  display: flex;
+  flex-direction: column;
+}
+.course__header {
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  max-width: 280px;
+}
+.course-card__header {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.course-card__text {
+  color: #8b8b8b;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.course-card__img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(18px);
+          backdrop-filter: blur(18px);
+  z-index: 20;
+}
+
+.popup {
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: calc(50% - 380px);
+  height: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+}
+.popup_request {
+  top: calc(50% - 330px);
+}
+.popup_login {
+  top: calc(50% - 170px);
+}
+.popup__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.popup__row:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.popup__header {
+  font-size: 36px;
+  line-height: 48px;
+}
+.popup__icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.popup__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 18px;
+}
+
+.form {
+  width: 100%;
+}
+.form__row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  align-items: flex-end;
+}
+.form__input {
+  width: calc(100% - 50px);
+  border-radius: 8px;
+  padding: 16px 24px;
+  border: none;
+  margin-bottom: 24px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #8b8b8b;
+  transition: 0.2s ease-in-out;
+  font-family: "Inter", sans-serif;
+  resize: none;
+}
+.form__input:focus, .form__input:not(:placeholder-shown), .form__input:-webkit-autofill {
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+.form__input:focus + label, .form__input:not(:placeholder-shown) + label, .form__input:-webkit-autofill + label {
+  transform: translate(0px, -24px);
+  font-size: 12px;
+  background: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.form__select {
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 24px;
+  border: none;
+  margin-bottom: 24px;
+  outline: none;
+  font-size: 16px;
+  border: 1px solid #8b8b8b;
+  transition: 0.2s ease-in-out;
+  font-family: "Inter", sans-serif;
+}
+.form__select:focus, .form__select:not(:placeholder-shown), .form__select:-webkit-autofill {
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #fff;
+}
+.form__select:focus + label, .form__select:not(:placeholder-shown) + label, .form__select:-webkit-autofill + label {
+  transform: translate(0px, -24px);
+  font-size: 12px;
+  background: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.form__label {
+  font-size: 16px;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+  font-family: "Inter", sans-serif;
+}/*# sourceMappingURL=main.css.map */
